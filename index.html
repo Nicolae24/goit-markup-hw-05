@@ -540,25 +540,30 @@
         </div>
         <div class="text-subscribe">
           <p class="subscribe-title">Subscribe</p>
-          <input
-            class="input-subscribe"
-            type="email"
-            placeholder="E-mail"
-            required
-          />
-          <button class="subscribe-button">
-            Subscribe
-            <svg class="subrcribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-telegrama"></use>
-            </svg>
-          </button>
+          <form class="form-subscribe">
+            <label class="" for="">
+              <input
+                class="input-subscribe"
+                type="email"
+                name="email-foter"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="subrcribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegrama"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <!--Modal window-->
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
-        <button class="icon-overlay-close">
+        <button type="button" class="icon-overlay-close">
           <svg class="icon-overlay" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -566,15 +571,15 @@
         <p class="title-overlay">
           Leave your contacts and we will call you back
         </p>
-        <form class="form">
+        <form class="form" autocomplete="off">
           <div class="input-wraper">
-            <label class="form-label" for="report_form">Name</label>
+            <label class="form-label" for="user-name">Name</label>
             <div class="form-input-wraper">
               <input
                 class="style-input-wraper"
                 type="text"
-                name="report_form"
-                id="report_form"
+                name="user-name"
+                id="user-name"
                 required
               />
               <svg class="input-wraper-icon" width="18" height="24">
@@ -583,13 +588,13 @@
             </div>
           </div>
           <div class="input-wraper">
-            <label class="form-label">Phone</label>
+            <label class="form-label" for="phone">Phone</label>
             <div class="form-input-wraper">
               <input
                 class="style-input-wraper"
                 type="tel"
-                name="report_form"
-                id="report_form"
+                name="phone"
+                id="phone"
                 required
               />
               <svg class="input-wraper-icon" width="18" height="24">
@@ -598,13 +603,13 @@
             </div>
           </div>
           <div class="input-wraper">
-            <label class="form-label">Email</label>
+            <label class="form-label" for="email">Email</label>
             <div class="form-input-wraper">
               <input
                 class="style-input-wraper"
                 type="email"
-                name="report_form"
-                id="report_form"
+                name="email"
+                id="email"
                 required
               />
               <svg class="input-wraper-icon" width="18" height="24">
@@ -612,26 +617,25 @@
               </svg>
             </div>
           </div>
-          <div class="input-wraper">
-            <label class="form-label">Comment </label>
-            <div class="form-input-wraper">
-              <textarea
-                class="form-comment"
-                name="user-coment"
-                id="user-coment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+          <div class="input-wraper-comment">
+            <label class="form-label" for="user-comment">Comment</label>
+            <textarea
+              class="form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="checkbox-wraper">
             <input
               class="form-privacy-checkbox visually-hidden"
               type="checkbox"
-              name="privacy-policy"
-              id="privacy-policy"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
               required
             />
-            <label class="form-label-checkbox" for="privacy-policy">
+            <label class="form-label-checkbox" for="user-privacy">
               <span class="custom-checkbox-wraper"
                 ><svg class="form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-accept"></use>
