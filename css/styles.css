@@ -598,7 +598,7 @@ ol {
   cursor: pointer;
 }
 
-.subsrcibe-icon {
+.subscribe-icon {
   margin-left: 16px;
 }
 
@@ -620,8 +620,8 @@ ol {
 
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -668,6 +668,7 @@ ol {
 
 .icon-overlay {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-overlay-close:hover,
