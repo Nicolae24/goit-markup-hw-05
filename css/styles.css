@@ -677,6 +677,13 @@ ol {
   border: none;
 }
 
+.icon-overlay-close:hover svg {
+  fill: #fff;
+}
+.icon-overlay-close:focus svg {
+  fill: #fff;
+}
+
 .icon-overlay:hover,
 .icon-overlay:focus {
   fill: #fff;
