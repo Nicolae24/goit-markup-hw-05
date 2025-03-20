@@ -548,7 +548,6 @@ ol {
 
 .form-subscribe {
   display: flex;
-  gap: 24px;
 }
 
 .input-subscribe {
@@ -652,8 +651,7 @@ ol {
   right: 24px;
   cursor: pointer;
   display: flex;
-  margin-left: auto;
-  margin-bottom: 24px;
+
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -705,8 +703,8 @@ ol {
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .input-wraper {
@@ -838,6 +836,7 @@ ol {
 }
 
 .button-submit {
+  display: flex;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -854,6 +853,8 @@ ol {
   margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-submit:hover {
